@@ -2,6 +2,14 @@
 
 UV::Util - Some utility functions from libUV.
 
+# WARNING
+
+UV::Util is being released as a learning process that will hopefully be folded
+into a more complete set of modules allowing use of libUV with Perl later. In
+other words, this will be more useful later. If it happens to be useful now,
+that's awesome. If not, hopefully it will be soon. Until then, please let me know
+of any errors during installation or of anything I can do to make this better.
+
 # SYNOPSIS
 
     #!/usr/bin/env perl
@@ -35,79 +43,41 @@ stated otherwise in the function's description.
 
 ## UV\_UNKNOWN\_HANDLE
 
-    # 0
-
 ## UV\_ASYNC
-
-    # 1
 
 ## UV\_CHECK
 
-    # 2
-
 ## UV\_FS\_EVENT
-
-    # 3
 
 ## UV\_FS\_POLL
 
-    # 4
-
 ## UV\_HANDLE
-
-    # 5
 
 ## UV\_IDLE
 
-    # 6
-
 ## UV\_NAMED\_PIPE
-
-    # 7
 
 ## UV\_POLL
 
-    # 8
-
 ## UV\_PREPARE
-
-    # 9
 
 ## UV\_PROCESS
 
-    # 10
-
 ## UV\_STREAM
-
-    # 11
 
 ## UV\_TCP
 
-    # 12
-
 ## UV\_TIMER
-
-    # 13
 
 ## UV\_TTY
 
-    # 14
-
 ## UV\_UDP
-
-    # 15
 
 ## UV\_SIGNAL
 
-    # 16
-
 ## UV\_FILE
 
-    # 17
-
 ## UV\_HANDLE\_TYPE\_MAX
-
-    # 18
 
 # FUNCTIONS
 
