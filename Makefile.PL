@@ -2,7 +2,7 @@ use ExtUtils::MakeMaker 7.12;
 
 use File::Spec ();
 
-my $lib_location = '-I.';
+my $lib_location = '-D_POSIX_C_SOURCE=200112 -I. -I../..';
 warn("Please tell us how to find your libUV installation by setting PERL_LIBUV_PATH");
 if (my $loc = $ENV{PERL_LIBUV_PATH}) {
     if (-e $loc && -d _ && -r _) {
@@ -19,11 +19,11 @@ WriteMakefile(
     ABSTRACT_FROM     => 'lib/UV/Util.pm',
     AUTHOR            => 'Chase Whitener <capoeirab@cpan.org>',
     LICENSE           => 'perl',
-    CCFLAGS           => '-Wall -std=c99',
-    OPTIMIZE          => '-O3',
+    #CCFLAGS           => '-Wall -std=c99',
+    #OPTIMIZE          => '-O3',
     LIBS              => ['-luv'], # e.g., '-lm'
-    DEFINE            => '-I ../.. -D_POSIX_C_SOURCE=200112', # e.g., '-DHAVE_SOMETHING'
-    INC               => $lib_location, # e.g., '-I. -I/usr/include/other'
+    DEFINE            => $lib_location, # e.g., '-DHAVE_SOMETHING'
+    #INC               => $lib_location, # e.g., '-I. -I/usr/include/other'
     # OBJECT            => '$(O_FILES)',
     test              => {
         "TESTS" => "t/*.t",

@@ -238,3 +238,9 @@ double luv_uptime()
         }
     OUTPUT:
     RETVAL
+
+const char * luv_version()
+    CODE:
+        RETVAL = uv_version_string();
+    OUTPUT:
+    RETVAL

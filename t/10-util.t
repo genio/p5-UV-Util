@@ -17,10 +17,11 @@ can_ok(
     'UV::Util', (
         qw(hrtime get_free_memory get_total_memory loadavg),
         qw(uptime resident_set_memory interface_addresses cpu_info),
-        qw(getrusage guess_handle_type),
+        qw(getrusage guess_handle_type version),
     )
 );
 
+diag("This is LibUV version: ".UV::Util::version());
 ok(UV::Util::hrtime(), 'hrtime: Got a time');
 ok(UV::Util::get_free_memory(), 'get_free_memory: Got memory size');
 ok(UV::Util::get_total_memory(), 'get_total_memory: Got memory sizez');
@@ -32,5 +33,5 @@ isa_ok(UV::Util::interface_addresses(), 'ARRAY', 'interface_addresses: array ref
 isa_ok(UV::Util::cpu_info, 'ARRAY', 'cpu_info: got array ref');
 isa_ok(UV::Util::getrusage, 'HASH', 'getrusage: got hashref');
 ok(UV::Util::guess_handle_type(\*STDIN), 'guess_handle_type: got a result');
-
+ok(UV::Util::version(), 'version: got back a string representation');
 done_testing();
