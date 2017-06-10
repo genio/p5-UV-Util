@@ -1,5 +1,8 @@
 Revision history for Perl extension UV::Util.
 
+0.003  2017-06-10
+    - 
+
 0.002  2017-06-10
     - Removed some stupid assumptions about compiler flags (thanks, mauke)
     - Added a version function to return the version of libUV installed
