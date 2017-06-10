@@ -25,11 +25,29 @@ WriteMakefile(
     DEFINE            => $lib_location, # e.g., '-DHAVE_SOMETHING'
     #INC               => $lib_location, # e.g., '-I. -I/usr/include/other'
     # OBJECT            => '$(O_FILES)',
+    META_MERGE   => {
+        dynamic_config => 0,
+        'meta-spec'    => {version => 2},
+        no_index       => {directory => ['examples', 't']},
+        prereqs        => {runtime => {requires => {perl => '5.008001'}}},
+        resources      => {
+            bugtracker => {web => 'https://github.com/genio/p5-UV-Util'},
+            repository => {
+                type => 'git',
+                url  => 'https://github.com/genio/p5-UV-Util.git',
+                web  => 'https://github.com/genio/p5-UV-Util',
+            },
+            x_IRC => 'irc://irc.perl.org/#perl'
+        },
+    },
     test              => {
         "TESTS" => "t/*.t",
     },
     XSMULTI           => 1,
     MIN_PERL_VERSION  => "5.008001",
+    BUILD_REQUIRES => {
+        "ExtUtils::MakeMaker" => "7.12",
+    },
     CONFIGURE_REQUIRES => {
         "ExtUtils::MakeMaker" => "7.12",
         "File::Spec" => 0,

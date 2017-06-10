@@ -1,6 +1,8 @@
 Changes
 Makefile.PL
+LICENSE
 MANIFEST
+README
 ppport.h
 lib/UV/Util.pm
 lib/UV/Util.xs

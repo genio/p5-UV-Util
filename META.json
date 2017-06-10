@@ -3,7 +3,7 @@
    "author" : [
       "Chase Whitener <capoeirab@cpan.org>"
    ],
-   "dynamic_config" : 1,
+   "dynamic_config" : 0,
    "generated_by" : "ExtUtils::MakeMaker version 7.28, CPAN::Meta::Converter version 2.150010",
    "license" : [
       "perl_5"
@@ -16,7 +16,9 @@
    "no_index" : {
       "directory" : [
          "t",
-         "inc"
+         "inc",
+         "examples",
+         "t"
       ]
    },
    "prereqs" : {
@@ -48,6 +50,17 @@
       }
    },
    "release_status" : "stable",
-   "version" : "0.001",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/genio/p5-UV-Util"
+      },
+      "repository" : {
+         "type" : "git",
+         "url" : "https://github.com/genio/p5-UV-Util.git",
+         "web" : "https://github.com/genio/p5-UV-Util"
+      },
+      "x_IRC" : "irc://irc.perl.org/#perl"
+   },
+   "version" : "0.002",
    "x_serialization_backend" : "JSON::PP version 2.94"
 }

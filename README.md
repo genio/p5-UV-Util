@@ -285,6 +285,16 @@ current process.
 This [function](http://docs.libuv.org/en/latest/misc.html#c.uv_uptime)
 returns a float representing the current system uptime.
 
+## version
+
+    use UV::Util;
+
+    say UV::Util::version();
+    # 1.9.1
+
+This [function](http://docs.libuv.org/en/v1.x/version.html)
+returns the libUV version number as a string. Does not throw errors.
+
 # COPYRIGHT AND LICENSE
 
 Copyright 2017, Chase Whitener.
