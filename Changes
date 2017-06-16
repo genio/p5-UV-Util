@@ -1,7 +1,8 @@
-Revision history for Perl extension UV::Util.
+Revision history for Perl extension {{$dist->name}}
 
-0.003  2017-06-10
-    - 
+{{$NEXT}}
+    - Using DZil
+    - Make use of Alien::libuv
 
 0.002  2017-06-10
     - Removed some stupid assumptions about compiler flags (thanks, mauke)
