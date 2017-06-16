@@ -45,7 +45,8 @@ my %WriteMakefileArgs = (
 
 %WriteMakefileArgs = (
     %WriteMakefileArgs,
-    CCFLAGS => Alien::libuv->cflags . " $Config{ccflags}",
+    XSMULTI => 1,
+    CCFLAGS => Alien::libuv->cflags . " -I. -I../.. $Config{ccflags}",
     LIBS    => [ Alien::libuv->libs ],
 );
 
