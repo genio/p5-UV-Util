@@ -1,7 +1,7 @@
 Revision history for Perl extension {{$dist->name}}
 
 {{$NEXT}}
-    - Using DZil
+    - Using DZil now
     - Make use of Alien::libuv
 
 0.002  2017-06-10
