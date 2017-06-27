@@ -29,6 +29,7 @@ my %WriteMakefileArgs = (
   "NAME" => "UV::Util",
   "PREREQ_PM" => {
     "Alien::libuv" => "0.003",
+    "XSLoader" => 0,
     "strict" => 0,
     "warnings" => 0
   },
@@ -56,6 +57,7 @@ my %FallbackPrereqs = (
   "ExtUtils::MakeMaker" => "7.12",
   "File::Spec" => 0,
   "Test::More" => "0.88",
+  "XSLoader" => 0,
   "strict" => 0,
   "warnings" => 0
 );

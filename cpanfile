@@ -3,6 +3,7 @@ on 'runtime' => sub {
     requires 'strict';
     requires 'warnings';
     requires 'Alien::libuv';
+    requires 'XSLoader';
 };
 
 on 'build' => sub {
