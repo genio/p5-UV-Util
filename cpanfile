@@ -6,9 +6,9 @@ on 'runtime' => sub {
 };
 
 on 'build' => sub {
-    requires 'Alien::libuv';
+    requires 'Alien::libuv' => '0.003';
     requires 'Config';
-    requires 'ExtUtils::MakeMaker' => 7.12;
+    requires 'ExtUtils::MakeMaker' => '7.12';
 };
 
 on 'configure' => sub {

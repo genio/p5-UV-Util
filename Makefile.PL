@@ -15,7 +15,7 @@ my %WriteMakefileArgs = (
   "ABSTRACT" => "Some utility functions from libUV.",
   "AUTHOR" => "Chase Whitener <capoeirab\@cpan.org>",
   "BUILD_REQUIRES" => {
-    "Alien::libuv" => 0,
+    "Alien::libuv" => "0.003",
     "Config" => 0,
     "ExtUtils::MakeMaker" => "7.12"
   },
@@ -28,7 +28,7 @@ my %WriteMakefileArgs = (
   "MIN_PERL_VERSION" => "5.008001",
   "NAME" => "UV::Util",
   "PREREQ_PM" => {
-    "Alien::libuv" => 0,
+    "Alien::libuv" => "0.003",
     "strict" => 0,
     "warnings" => 0
   },
@@ -51,7 +51,7 @@ my %WriteMakefileArgs = (
 );
 
 my %FallbackPrereqs = (
-  "Alien::libuv" => 0,
+  "Alien::libuv" => "0.003",
   "Config" => 0,
   "ExtUtils::MakeMaker" => "7.12",
   "File::Spec" => 0,

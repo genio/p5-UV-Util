@@ -26,7 +26,7 @@
    "prereqs" : {
       "build" : {
          "requires" : {
-            "Alien::libuv" : "0",
+            "Alien::libuv" : "0.003",
             "Config" : "0",
             "ExtUtils::MakeMaker" : "7.12"
          }
@@ -56,7 +56,7 @@
       },
       "runtime" : {
          "requires" : {
-            "Alien::libuv" : "0",
+            "Alien::libuv" : "0.003",
             "perl" : "5.008001",
             "strict" : "0",
             "warnings" : "0"
@@ -94,7 +94,7 @@
    "version" : "0.004",
    "x_Dist_Zilla" : {
       "perl" : {
-         "version" : "5.026000"
+         "version" : "5.024001"
       },
       "plugins" : [
          {
@@ -119,7 +119,7 @@
                }
             },
             "name" : "Git::GatherDir",
-            "version" : "2.042"
+            "version" : "2.041"
          },
          {
             "class" : "Dist::Zilla::Plugin::PruneCruft",
@@ -150,18 +150,18 @@
                   "include_underscores" : 0
                },
                "Dist::Zilla::Role::MetaProvider::Provider" : {
-                  "$Dist::Zilla::Role::MetaProvider::Provider::VERSION" : "2.002004",
+                  "$Dist::Zilla::Role::MetaProvider::Provider::VERSION" : "2.002003",
                   "inherit_missing" : 1,
                   "inherit_version" : 1,
                   "meta_noindex" : 1
                },
                "Dist::Zilla::Role::ModuleMetadata" : {
-                  "Module::Metadata" : "1.000033",
+                  "Module::Metadata" : "1.000031",
                   "version" : "0.004"
                }
             },
             "name" : "@Starter/MetaProvides::Package",
-            "version" : "2.004003"
+            "version" : "2.004002"
          },
          {
             "class" : "Dist::Zilla::Plugin::MetaNoIndex",
@@ -211,7 +211,7 @@
          {
             "class" : "Dist::Zilla::Plugin::Test::ReportPrereqs",
             "name" : "@Starter/Test::ReportPrereqs",
-            "version" : "0.027"
+            "version" : "0.025"
          },
          {
             "class" : "Dist::Zilla::Plugin::Test::Compile",
@@ -310,18 +310,18 @@
                   "include_underscores" : 0
                },
                "Dist::Zilla::Role::MetaProvider::Provider" : {
-                  "$Dist::Zilla::Role::MetaProvider::Provider::VERSION" : "2.002004",
+                  "$Dist::Zilla::Role::MetaProvider::Provider::VERSION" : "2.002003",
                   "inherit_missing" : 1,
                   "inherit_version" : 1,
                   "meta_noindex" : 1
                },
                "Dist::Zilla::Role::ModuleMetadata" : {
-                  "Module::Metadata" : "1.000033",
+                  "Module::Metadata" : "1.000031",
                   "version" : "0.004"
                }
             },
             "name" : "MetaProvides::Package",
-            "version" : "2.004003"
+            "version" : "2.004002"
          },
          {
             "class" : "Dist::Zilla::Plugin::NextRelease",
@@ -332,7 +332,7 @@
             "class" : "Dist::Zilla::Plugin::Git::Contributors",
             "config" : {
                "Dist::Zilla::Plugin::Git::Contributors" : {
-                  "git_version" : "2.11.0",
+                  "git --version" : "2.11.0 (Apple Git-81)",
                   "include_authors" : 0,
                   "include_releaser" : 1,
                   "order_by" : "name",
@@ -340,7 +340,7 @@
                }
             },
             "name" : "Git::Contributors",
-            "version" : "0.030"
+            "version" : "0.029"
          },
          {
             "class" : "Dist::Zilla::Plugin::GithubMeta",
@@ -362,12 +362,12 @@
                   "changelog" : "Changes"
                },
                "Dist::Zilla::Role::Git::Repo" : {
-                  "git_version" : "2.11.0",
+                  "git --version" : "2.11.0 (Apple Git-81)",
                   "repo_root" : "."
                }
             },
             "name" : "@Git/Check",
-            "version" : "2.042"
+            "version" : "2.041"
          },
          {
             "class" : "Dist::Zilla::Plugin::Git::Commit",
@@ -385,7 +385,7 @@
                   "changelog" : "Changes"
                },
                "Dist::Zilla::Role::Git::Repo" : {
-                  "git_version" : "2.11.0",
+                  "git --version" : "2.11.0 (Apple Git-81)",
                   "repo_root" : "."
                },
                "Dist::Zilla::Role::Git::StringFormatter" : {
@@ -393,7 +393,7 @@
                }
             },
             "name" : "@Git/Commit",
-            "version" : "2.042"
+            "version" : "2.041"
          },
          {
             "class" : "Dist::Zilla::Plugin::Git::Tag",
@@ -407,7 +407,7 @@
                   "tag_message" : "v%v"
                },
                "Dist::Zilla::Role::Git::Repo" : {
-                  "git_version" : "2.11.0",
+                  "git --version" : "2.11.0 (Apple Git-81)",
                   "repo_root" : "."
                },
                "Dist::Zilla::Role::Git::StringFormatter" : {
@@ -415,7 +415,7 @@
                }
             },
             "name" : "@Git/Tag",
-            "version" : "2.042"
+            "version" : "2.041"
          },
          {
             "class" : "Dist::Zilla::Plugin::Git::Push",
@@ -427,12 +427,12 @@
                   "remotes_must_exist" : 1
                },
                "Dist::Zilla::Role::Git::Repo" : {
-                  "git_version" : "2.11.0",
+                  "git --version" : "2.11.0 (Apple Git-81)",
                   "repo_root" : "."
                }
             },
             "name" : "@Git/Push",
-            "version" : "2.042"
+            "version" : "2.041"
          },
          {
             "class" : "Dist::Zilla::Plugin::CheckChangeLog",
@@ -500,7 +500,7 @@
          {
             "class" : "Dist::Zilla::Plugin::CopyFilesFromBuild",
             "name" : "CopyFilesFromBuild",
-            "version" : "0.170880"
+            "version" : "0.163040"
          },
          {
             "class" : "Dist::Zilla::Plugin::FinderCode",
@@ -571,6 +571,6 @@
          "version" : "6.009"
       }
    },
-   "x_serialization_backend" : "Cpanel::JSON::XS version 3.0233"
+   "x_serialization_backend" : "Cpanel::JSON::XS version 3.0225"
 }
 

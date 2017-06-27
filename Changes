@@ -1,7 +1,8 @@
 Revision history for Perl extension {{$dist->name}}
 
 {{$NEXT}}
-    - 
+    - Bump requirement for Alien::libuv to 0.003, ensuring clean installs on
+      more platforms
 
 0.003     2017-06-16
     - Using DZil now
