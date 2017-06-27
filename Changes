@@ -4,6 +4,7 @@ Revision history for Perl extension {{$dist->name}}
     - Bump requirement for Alien::libuv to 0.003, ensuring clean installs on
       more platforms
     - Add PROTOTYPES: DISABLE
+    - Add XSLoader to the prereqs list
 
 0.003     2017-06-16
     - Using DZil now
