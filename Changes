@@ -1,7 +1,10 @@
 Revision history for Perl extension {{$dist->name}}
 
 {{$NEXT}}
-    - 
+    -
+
+0.006     2017-06-27
+    - Add Exporter to prereqs.
 
 0.005     2017-06-27
     - Make all functions and constants exportable
