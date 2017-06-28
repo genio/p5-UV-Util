@@ -1,7 +1,7 @@
 Revision history for Perl extension {{$dist->name}}
 
 {{$NEXT}}
-    - 
+    - Make all functions and constants exportable
 
 0.004     2017-06-27
     - Bump requirement for Alien::libuv to 0.003, ensuring clean installs on
