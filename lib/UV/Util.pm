@@ -6,10 +6,9 @@ $VERSION = eval $VERSION;
 
 use strict;
 use warnings;
-require Exporter;
+use Exporter qw(import);
 require XSLoader;
 
-our @ISA        = qw(Exporter);
 our @EXPORT_OK  = qw(
     cpu_info get_free_memory get_total_memory getrusage guess_handle_type
     hrtime interface_addresses loadavg resident_set_memory version

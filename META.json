@@ -57,6 +57,7 @@
       "runtime" : {
          "requires" : {
             "Alien::libuv" : "0.003",
+            "Exporter" : "5.57",
             "XSLoader" : "0.14",
             "perl" : "5.008001",
             "strict" : "0",
