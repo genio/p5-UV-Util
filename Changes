@@ -1,6 +1,8 @@
 Revision history for Perl extension {{$dist->name}}
 
 {{$NEXT}}
+
+0.007     2017-06-29
     - Bump the requirement of Alien::libuv to v0.004 to ensure libuv v1+
 
 0.006     2017-06-27
