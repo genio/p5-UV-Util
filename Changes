@@ -1,6 +1,8 @@
 Revision history for Perl extension {{$dist->name}}
 
 {{$NEXT}}
+
+0.008     2017-07-10
     - Bump version of Alien::libuv to 0.006 to add more diagnostics
     - Add more diagnostics to the tests
 
