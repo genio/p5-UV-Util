@@ -156,7 +156,7 @@
                "Dist::Zilla::Role::MetaProvider::Provider" : {
                   "$Dist::Zilla::Role::MetaProvider::Provider::VERSION" : "2.002004",
                   "inherit_missing" : 1,
-                  "inherit_version" : 1,
+                  "inherit_version" : 0,
                   "meta_noindex" : 1
                },
                "Dist::Zilla::Role::ModuleMetadata" : {
@@ -188,14 +188,9 @@
             "version" : "6.010"
          },
          {
-            "class" : "Dist::Zilla::Plugin::ReadmeAnyFromPod",
-            "config" : {
-               "Dist::Zilla::Role::FileWatcher" : {
-                  "version" : "0.006"
-               }
-            },
-            "name" : "@Starter/ReadmeAnyFromPod",
-            "version" : "0.163250"
+            "class" : "Dist::Zilla::Plugin::Pod2Readme",
+            "name" : "@Starter/Pod2Readme",
+            "version" : "0.004"
          },
          {
             "class" : "Dist::Zilla::Plugin::ExecDir",
@@ -241,6 +236,21 @@
             "version" : "2.058"
          },
          {
+            "class" : "Dist::Zilla::Plugin::MakeMaker::Awesome",
+            "config" : {
+               "Dist::Zilla::Plugin::MakeMaker" : {
+                  "make_path" : "make",
+                  "version" : "6.010"
+               },
+               "Dist::Zilla::Role::TestRunner" : {
+                  "default_jobs" : 1,
+                  "version" : "6.010"
+               }
+            },
+            "name" : "@Starter/MakeMaker::Awesome",
+            "version" : "0.41"
+         },
+         {
             "class" : "Dist::Zilla::Plugin::Manifest",
             "name" : "@Starter/Manifest",
             "version" : "6.010"
@@ -269,21 +279,6 @@
             "class" : "Dist::Zilla::Plugin::UploadToCPAN",
             "name" : "@Starter/UploadToCPAN",
             "version" : "6.010"
-         },
-         {
-            "class" : "Dist::Zilla::Plugin::MakeMaker::Awesome",
-            "config" : {
-               "Dist::Zilla::Plugin::MakeMaker" : {
-                  "make_path" : "make",
-                  "version" : "6.010"
-               },
-               "Dist::Zilla::Role::TestRunner" : {
-                  "default_jobs" : 1,
-                  "version" : "6.010"
-               }
-            },
-            "name" : "MakeMaker::Awesome",
-            "version" : "0.41"
          },
          {
             "class" : "Dist::Zilla::Plugin::PkgVersion",
