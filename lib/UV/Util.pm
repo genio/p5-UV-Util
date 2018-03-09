@@ -302,9 +302,9 @@ current process.
     use Syntax::Keyword::Try;
 
     my $res;
-    try { $res = UV::Util::resident_set_memory(); }
+    try { $res = UV::Util::uptime(); }
     catch { die "Aw, man. $@"; }
-    say Dumper $res; # uptime
+    say Dumper $res; # 603468
 
 This L<function|http://docs.libuv.org/en/latest/misc.html#c.uv_uptime>
 returns a float representing the current system uptime.
