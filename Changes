@@ -1,6 +1,9 @@
 Revision history for Perl extension {{$dist->name}}
 
 {{$NEXT}}
+    - Update the tests to pass on cygwin.
+    - Fix unnecessarily added libraries during build on cygwin
+    - Fixup AppVeyor tests some more to expand testing.
 
 0.009     2018-03-08
     - Add AppVeyor tests

@@ -14,7 +14,7 @@ use Alien::libuv ();
 # Some options behave differently on Windows
 sub WINLIKE () {
     return 1 if $^O eq 'MSWin32';
-    return 1 if $^O eq 'cygwin';
+    # return 1 if $^O eq 'cygwin';
     return 1 if $^O eq 'msys';
     return '';
 }
