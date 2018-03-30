@@ -9,12 +9,6 @@ sub WINLIKE () {
     return '';
 }
 
-sub ODD_WIN () {
-    return '' unless grep {$^O eq $_} (qw(MSWin32 msys));
-    return '' unless $Config{PERL_API_VERSION} = 18;
-    return 1;
-}
-
 # make sure we actually get stuff back from Alien::libuv
 sub TRIM {
     my $s = shift;
@@ -25,7 +19,7 @@ sub TRIM {
 }
 
 my @flags = ('-I.', $Config{ccflags});
-push @flags, '-D_WIN32_WINNT=0x0600' if ODD_WIN();
+push @flags, '-D_WIN32_WINNT=0x0600' if WINLIKE();
 my $libs = Alien::libuv->libs();
 $libs .= ' -lpsapi -luserenv -lIphlpapi' if WINLIKE();
 {
