@@ -1,6 +1,8 @@
 Revision history for Perl extension {{$dist->name}}
 
 {{$NEXT}}
+
+0.010     2018-04-03
     - Update the tests to pass on cygwin.
     - Fix unnecessarily added libraries during build on cygwin
     - Fixup AppVeyor tests some more to expand testing.
