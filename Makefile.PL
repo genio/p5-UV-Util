@@ -61,10 +61,10 @@ sub TRIM {
 
 my @flags = ('-I.', $Config{ccflags});
 if (my $ver = WINVER()) {
-    push @flags, "-D_WINVER=$ver";
-    push @flags, "-D_WIN32_WINNT=$ver";
-    push @flags, "-D_WIN32_WINDOWS=$ver";
-    push @flags, "-D_WIN32_IE=$ver";
+    push @flags, "-DWIN32_LEAN_AND_MEAN" unless $Config{ccflags} =~ /LEAN_AND_MEAN/;
+    push @flags, "-D_WINVER=$ver", "-D_WIN32_WINNT=$ver";
+    #push @flags, "-D_WIN32_WINDOWS=$ver";
+    #push @flags, "-D_WIN32_IE=$ver";
 }
 my $libs = Alien::libuv->libs();
 $libs .= ' -lpsapi -luserenv -lIphlpapi' if WINLIKE();
